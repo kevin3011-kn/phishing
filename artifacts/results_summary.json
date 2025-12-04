@@ -1,0 +1,182 @@
+{
+  "timestamp": "2025-12-04T17:41:58.866306",
+  "classification_report": {
+    "legit": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "phishing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      30,
+      0
+    ],
+    [
+      0,
+      30
+    ]
+  ],
+  "top_features": [
+    {
+      "feature": "http",
+      "importance": 0.07399267580293245
+    },
+    {
+      "feature": "example",
+      "importance": 0.054686593361862525
+    },
+    {
+      "feature": "en",
+      "importance": 0.04566282700454128
+    },
+    {
+      "feature": "datos",
+      "importance": 0.027885308143044782
+    },
+    {
+      "feature": "el",
+      "importance": 0.02753153500997856
+    },
+    {
+      "feature": "para",
+      "importance": 0.024823660233707422
+    },
+    {
+      "feature": "en http",
+      "importance": 0.024476444914694247
+    },
+    {
+      "feature": "com",
+      "importance": 0.023650491392677303
+    },
+    {
+      "feature": "la",
+      "importance": 0.02278622230437817
+    },
+    {
+      "feature": "del",
+      "importance": 0.02074785065322625
+    },
+    {
+      "feature": "su",
+      "importance": 0.017212284884779584
+    },
+    {
+      "feature": "ly",
+      "importance": 0.014125884438743477
+    },
+    {
+      "feature": "las",
+      "importance": 0.013492053797336503
+    },
+    {
+      "feature": "el próximo",
+      "importance": 0.01030521536166473
+    },
+    {
+      "feature": "de",
+      "importance": 0.009486844534441114
+    },
+    {
+      "feature": "correctamente",
+      "importance": 0.00930764550739605
+    },
+    {
+      "feature": "example com",
+      "importance": 0.008755031971466296
+    },
+    {
+      "feature": "llamada de",
+      "importance": 0.007553517428707031
+    },
+    {
+      "feature": "bancolombia",
+      "importance": 0.007479806915144052
+    },
+    {
+      "feature": "obligatoria",
+      "importance": 0.007089917117625382
+    },
+    {
+      "feature": "oficina",
+      "importance": 0.0067692567780827766
+    },
+    {
+      "feature": "confirma",
+      "importance": 0.0066922904885102965
+    },
+    {
+      "feature": "número",
+      "importance": 0.00661597327193607
+    },
+    {
+      "feature": "bancolombia http",
+      "importance": 0.006508752433143175
+    },
+    {
+      "feature": "llamada",
+      "importance": 0.006405863664951787
+    },
+    {
+      "feature": "oficina central",
+      "importance": 0.006359257573356413
+    },
+    {
+      "feature": "acceso",
+      "importance": 0.006295965821139376
+    },
+    {
+      "feature": "atención",
+      "importance": 0.006176328884724619
+    },
+    {
+      "feature": "tarjeta fue",
+      "importance": 0.0060505612175098256
+    },
+    {
+      "feature": "de atención",
+      "importance": 0.005817877511017575
+    }
+  ],
+  "demo_examples": [
+    {
+      "text": "URGENTE: Su cuenta bancaria ha sido bloqueada. Ingrese aquí http://bit.ly/abc123 y verifique su identidad.",
+      "risk_score": 0.935,
+      "label": "phishing",
+      "explanation": "Palabras de riesgo detectadas: http, su, ly. Recomendación: no responder ni abrir enlaces. ¿Desea avisar a un contacto de confianza?"
+    },
+    {
+      "text": "Recordatorio: su cita con el médico es el próximo martes a las 9:00.",
+      "risk_score": 0.0,
+      "label": "legit",
+      "explanation": "Palabras de riesgo detectadas: el, su, las, el próximo. Recomendación: no responder ni abrir enlaces. ¿Desea avisar a un contacto de confianza?"
+    },
+    {
+      "text": "Su pensión no ha sido pagada. Actualice sus datos en http://pago.example.com/pagar",
+      "risk_score": 0.97,
+      "label": "phishing",
+      "explanation": "Palabras de riesgo detectadas: http, example, en, datos, en http. Recomendación: no responder ni abrir enlaces. ¿Desea avisar a un contacto de confianza?"
+    }
+  ]
+}
